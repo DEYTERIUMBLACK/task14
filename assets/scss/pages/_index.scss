@@ -1,0 +1,80 @@
+#hero{
+    .mainbox{
+    margin-top: 50px;
+       .box {
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        margin: 20px;
+        height: 250px;
+        @media only screen and (max-width:992px){
+            height: 300px;
+        }
+        background: url(./../images/herobox.png) center/cover no-repeat;
+        overflow: hidden;
+        .text{
+            font-size: 20px;
+            border: 15px;
+            backdrop-filter: blur(30px);
+            color: white;
+            position: absolute;
+            bottom: 40px;
+            left: 20px;
+            overflow: hidden;
+        }
+        background-size: 100%;
+        transition: all .7s;
+        }
+        .box:hover{
+            background-size: 110%;
+            transition: all 1s;
+        }
+}
+}
+#models{
+    .models_txt{
+        margin-top: 30px;
+        font-family: "Porsche";
+        text-align: center;
+        font-weight: 600;
+        font-size: 33px;
+    }
+    .model_box{
+        position: relative;
+        background: url(./../images/911.png) center/cover no-repeat;
+        height: 550px;
+        margin: 20px;
+        border-radius: 15px;
+        overflow: hidden;
+        .model_box_txt{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            h2{
+                font-family: "Porsche";
+                font-size: 40px;
+                color: white;
+            }
+            p{
+                font-family: "Porsche";
+                font-size: 20px;
+                color: white;
+            }
+            button{
+                font-family: "Porsche";
+                font-size: 30px;
+                color: white;
+                background: none;
+                border: 2px white solid;
+                padding: 10px;
+                
+            }
+        }
+        background-size: 100%;
+        transition: 0.7s;
+    }    
+    .model_box:hover{
+        background-size:110%;
+        transition: 1s;
+    }
+}

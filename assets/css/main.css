@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1px;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* desktop responsive */
+@media only screen and (max-width: 1440px) {
+  .lg-none {
+    display: none !important;
+  }
+  .container {
+    width: 90%;
+  }
+  .col-lg-1 {
+    width: 8.3333333333%;
+  }
+  .col-lg-2 {
+    width: 16.6666666667%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.3333333333%;
+  }
+  .col-lg-5 {
+    width: 41.6666666667%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.3333333333%;
+  }
+  .col-lg-8 {
+    width: 66.6666666667%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-10 {
+    width: 83.3333333333%;
+  }
+  .col-lg-11 {
+    width: 91.6666666667%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+/* tablet responsive */
+@media only screen and (max-width: 992px) {
+  .md-none {
+    display: none !important;
+  }
+  .md-display {
+    display: inline-block !important;
+  }
+  .container {
+    width: 80%;
+  }
+  .col-md-1 {
+    width: 8.3333333333%;
+  }
+  .col-md-2 {
+    width: 16.6666666667%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.3333333333%;
+  }
+  .col-md-5 {
+    width: 41.6666666667%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.3333333333%;
+  }
+  .col-md-8 {
+    width: 66.6666666667%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.3333333333%;
+  }
+  .col-md-11 {
+    width: 91.6666666667%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+/* mobile responsive */
+@media only screen and (max-width: 768px) {
+  .sm-none {
+    display: none;
+  }
+  .container {
+    width: 75%;
+  }
+  .col-sm-1 {
+    width: 8.3333333333%;
+  }
+  .col-sm-2 {
+    width: 16.6666666667%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.3333333333%;
+  }
+  .col-sm-5 {
+    width: 41.6666666667%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.3333333333%;
+  }
+  .col-sm-8 {
+    width: 66.6666666667%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.3333333333%;
+  }
+  .col-sm-11 {
+    width: 91.6666666667%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+header {
+  position: relative;
+  background: url(./../images/porcheimg.jpg) center/cover no-repeat;
+  height: 100vh;
+  color: white;
+}
+header nav {
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+header nav .nav_menu i {
+  font-size: 18px;
+}
+header nav .nav_menu .nav_menu_search {
+  display: none;
+  font-size: 18px;
+  margin-left: 7px;
+}
+@media only screen and (max-width: 768px) {
+  header nav .nav_menu .nav_menu_search {
+    display: inline-block;
+  }
+}
+header nav .nav_menu span {
+  margin-left: 10px;
+  font-family: "Porsche";
+  font-size: 18px;
+}
+header nav .nav_logo img {
+  height: 40px;
+  width: 30px;
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  header nav .nav_logo img {
+    display: inline-block;
+  }
+}
+header nav .nav_logo svg {
+  fill: white;
+  width: 165px;
+  height: 11px;
+}
+header nav .nav_buttons i {
+  font-size: 18px;
+  margin-left: 7px;
+}
+header p {
+  padding-top: 200px;
+  font-family: "Porsche";
+  font-size: 50px;
+}
+header button {
+  background: none;
+  color: white;
+  border: 2px white solid;
+  border-radius: 3px;
+  font-family: "Porsche";
+  font-size: 20px;
+  padding: 10px;
+}
+header button:hover {
+  background-color: rgba(128, 128, 128, 0.378);
+  transition: 1s;
+}
+
+#hero .mainbox {
+  margin-top: 50px;
+}
+#hero .mainbox .box {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px;
+  height: 250px;
+  background: url(./../images/herobox.png) center/cover no-repeat;
+  overflow: hidden;
+  background-size: 100%;
+  transition: all 0.7s;
+}
+@media only screen and (max-width: 992px) {
+  #hero .mainbox .box {
+    height: 300px;
+  }
+}
+#hero .mainbox .box .text {
+  font-size: 20px;
+  border: 15px;
+  backdrop-filter: blur(30px);
+  color: white;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  overflow: hidden;
+}
+#hero .mainbox .box:hover {
+  background-size: 110%;
+  transition: all 1s;
+}
+
+#models .models_txt {
+  margin-top: 30px;
+  font-family: "Porsche";
+  text-align: center;
+  font-weight: 600;
+  font-size: 33px;
+}
+#models .model_box {
+  position: relative;
+  background: url(./../images/911.png) center/cover no-repeat;
+  height: 550px;
+  margin: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-size: 100%;
+  transition: 0.7s;
+}
+#models .model_box .model_box_txt {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+#models .model_box .model_box_txt h2 {
+  font-family: "Porsche";
+  font-size: 40px;
+  color: white;
+}
+#models .model_box .model_box_txt p {
+  font-family: "Porsche";
+  font-size: 20px;
+  color: white;
+}
+#models .model_box .model_box_txt button {
+  font-family: "Porsche";
+  font-size: 30px;
+  color: white;
+  background: none;
+  border: 2px white solid;
+  padding: 10px;
+}
+#models .model_box:hover {
+  background-size: 110%;
+  transition: 1s;
+}/*# sourceMappingURL=main.css.map */
